@@ -286,9 +286,19 @@ screen and (min-resolution: 2dppx) {
 
 
 .benefits-list-icon {
-    display: flex;
-    align-items: center;
-    margin: 0 auto;
+    display: none;
+}
+
+@media only screen and (min-width: 1158px) {
+    .benefits-list-icon {
+        display: flex;
+        padding: 24px 100px;
+        border-radius: 4px;
+        background-color: var(--cloud);
+        margin-bottom: 8px;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 .benefits-list-subtitle {
@@ -329,6 +339,39 @@ screen and (min-resolution: 2dppx) {
     }
 }
 
+/* product styles */
+
+.products-section {
+    padding-bottom: 120px;
+}
+
+@media only screen and (max-width: 1157.98px) {
+    .products-section {
+        display: none;
+    }
+}
+
+.products-title {
+    color: var(--navyblue);
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    margin-bottom: 72px;
+}
+
+.products-list {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+}
+
+.products-list-item {
+    width: calc((100% - 3 * 16px) / 3);
+}
+
 /* team styles */
 .team-section {
     background-color: var(--cloud);
@@ -358,6 +401,7 @@ screen and (min-resolution: 2dppx) {
     display: flex;
     flex-direction: column;
     gap: 72px;
+    text-align: center;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1157px) {
@@ -379,11 +423,26 @@ screen and (min-resolution: 2dppx) {
 
 .team-list-item {
     background-color: #FFFFFF;
-    width: 264px;
-
+    max-width: 264px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 
+}
+
+@media only screen and (max-width: 767.98px) {
+    .team-list-item:not(:last-child) {
+        margin-bottom: 72px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .team-list-item: {
+        flex-basis: calc((100% - 24px * 1) / 2)
+    }
 }
 
 .team-details {

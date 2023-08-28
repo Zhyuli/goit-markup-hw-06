@@ -235,7 +235,7 @@
     padding-bottom: 120px;
 }
 
-.products-title {
+/* .products-title {
     color: var(--navyblue);
     text-align: center;
     font-weight: 700;
@@ -244,9 +244,9 @@
     letter-spacing: 0.02em;
     text-transform: capitalize;
     margin-bottom: 72px;
-}
+} */
 
-.products-list {
+/* .products-list {
     display: flex;
     gap: 24px;
     justify-content: center;
@@ -254,7 +254,7 @@
 
 .products-list-item {
     width: calc((100% - 3 * 16px) / 3);
-}
+} */
 
 
 /* team styles */
