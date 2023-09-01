@@ -23,9 +23,9 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <!-- <header class="header">
-      <div class="header-container container"> -->
-    <!-- <nav class="nav">
+    <header class="header">
+      <div class="header-container container">
+        <nav class="nav">
           <a class="header-logo link" href="./index.html"
             >Web<span class="logo-dark">Studio</span></a
           >
@@ -40,9 +40,9 @@
               <a class="nav-menu link" href="">Contacts</a>
             </li>
           </ul>
-        </nav> -->
-    <!-- Contacts -->
-    <!-- <address class="contacts">
+        </nav>
+        <!-- Contacts -->
+        <address class="contacts">
           <ul class="contacts-list list">
             <li>
               <a class="address-menu link" href="mailto:info@devstudio.com"
@@ -55,9 +55,19 @@
               >
             </li>
           </ul>
-        </address> -->
-    <!-- </div>
-    </header> -->
+        </address>
+        <!-- burger -->
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="mobile-menu-icon" width="32" height="22">
+            <use href="./images/icons.svg#icon-menu-hamburger"></use>
+          </svg>
+        </button>
+      </div>
+    </header>
     <main>
       <!-- Hero section 1  -->
       <section class="hero-section">
@@ -161,7 +171,7 @@
       </section>
       <!-- team section 4 -->
       <section class="team-section">
-        <div class="container">
+        <div class="container team-container">
           <h2 class="team-title">Our Team</h2>
           <ul class="team-list list">
             <!-- Mark Guerrero -->
@@ -383,7 +393,7 @@
         </div>
       </section>
       <!-- customers section 5 -->
-      <!-- <section class="customers-section">
+      <section class="customers-section">
         <div class="container">
           <h2 class="customers-title">Customers</h2>
           <ul class="customers-list">
@@ -431,7 +441,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
     <!-- <footer class="footer-section">
       <div class="container footer"> -->
@@ -638,6 +648,28 @@
       </div>
     </div> -->
 
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg class="menu-close-icon" width="8" height="8">
+          <use href="./images/icons.svg#icon-close-menu"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu">
+        <li><a href="" class="link">About</a></li>
+        <li><a href="" class="link">Products</a></li>
+        <li><a href="" class="link">Contacts</a></li>
+        <li><a href="" class="link">Career</a></li>
+      </ul>
+    </div>
+
     <!-- <script src="./js/modal.js"></script> -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
