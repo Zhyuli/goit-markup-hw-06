@@ -686,8 +686,6 @@ screen and (min-resolution: 2dppx) {
         display: flex;
         align-items: center;
         justify-content: center;
-
-
         padding: 0;
         background-color: transparent;
         cursor: pointer;
@@ -707,20 +705,25 @@ screen and (min-resolution: 2dppx) {
         background-color: rgba(0, 0, 0, 0.1);
     }
 
-
-
     .menu-container {
         position: fixed;
         top: 0;
         left: 0;
         width: 100vw;
         height: 100vh;
-        padding: 32px;
-        background-color: #3f51b5;
+        padding: 40px;
+        padding-top: 80px;
+        padding-bottom: 284px;
+        background-color: var(--white);
         z-index: 999;
-
         transform: translateX(100%);
         transition: transform 250ms ease-in-out;
+    }
+
+    @media only screen and (min-width: 767.98px) {
+        .menu-container {
+            display: none;
+        }
     }
 
     .menu-container.is-open {
@@ -729,24 +732,36 @@ screen and (min-resolution: 2dppx) {
 
     .menu-container .menu-toggle {
         position: absolute;
-        top: 16px;
-        right: 16px;
+        top: 24px;
+        right: 24px;
         color: #fff;
+        box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
+            0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+            0px 2px 1px 0px rgba(46, 47, 66, 0.08);
     }
 
-    .mobile-menu {
-        padding: 0;
-        margin: 0;
-        list-style: none;
-    }
+
 
     .mobile-menu-icon {
         stroke: var(--navyblue);
     }
 
-    .mobile-menu .link {
+    .mobile-menu {
+        margin-bottom: auto;
+    }
+
+    .mobile-menu-link {
         display: block;
-        padding: 10px;
-        color: #fff;
-        text-decoration: none;
+        color: var(--navyblue);
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 0.02em;
+        letter-spacing: 0.72px;
+        text-transform: capitalize;
+    }
+
+    /* For mobile && tablet screen */
+
+    .mobile-menu-link:active {
+        color: ;
     }
