@@ -25,42 +25,50 @@
   <body>
     <header class="header">
       <div class="header-container container">
-        <!-- <nav class="nav">
+        <nav class="nav">
           <a class="header-logo link" href="./index.html"
             >Web<span class="logo-dark">Studio</span></a
           >
           <ul class="nav-list list">
             <li class="nav-list-item">
-              <a class="nav-menu link" href="./index.html">Studio</a>
+              <a class="nav-menu current link" href="./index.html">Studio</a>
             </li>
             <li class="nav-list-item">
-              <a class="nav-menu current link" href="./portfolio.html"
-                >Portfolio</a
-              >
+              <a class="nav-menu link" href="./portfolio.html">Portfolio</a>
             </li>
             <li class="nav-list-item">
               <a class="nav-menu link" href="">Contacts</a>
             </li>
           </ul>
-        </nav> -->
+        </nav>
         <!-- Contacts -->
-        <!-- <address class="contacts">
+        <address class="contacts">
           <ul class="contacts-list list">
-            <li>
+            <li class="contacts-list-item">
               <a class="address-menu link" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
               >
             </li>
-            <li>
+            <li class="contacts-list-item">
               <a class="address-menu link" href="tel:+110001111111"
                 >+11 (000) 111-11-11</a
               >
             </li>
           </ul>
         </address>
+        <!-- burger -->
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="mobile-menu-icon" width="32" height="22">
+            <use href="./images/icons.svg#icon-menu-hamburger"></use>
+          </svg>
+        </button>
       </div>
     </header>
-    <main> -->
+    <main>
       <!-- portfolio section -->
 
       <section class="portfolio section">
@@ -295,16 +303,16 @@
           <a class="footer-logo logo link" href="./index.html"
             >Web<span class="logo-light">Studio</span></a
           > -->
-          <!-- footer text -->
-          <!-- <p class="footer-text">
+      <!-- footer text -->
+      <!-- <p class="footer-text">
             Increase the flow of customers and sales for your business with
             digital marketing &#38; growth solutions.
           </p>
         </div> -->
-        <!-- social media block -->
-        <!-- <div class="social-media-block"> -->
-          <!-- social media text -->
-          <!-- <p class="social-media-text">Social media</p>
+      <!-- social media block -->
+      <!-- <div class="social-media-block"> -->
+      <!-- social media text -->
+      <!-- <p class="social-media-text">Social media</p>
           <ul class="social-media list">
             <li class="social-media-item">
               <a
@@ -348,8 +356,8 @@
             </li>
           </ul>
         </div> -->
-        <!-- subscribe -->
-<!-- 
+      <!-- subscribe -->
+      <!-- 
         <div class="subscribe-block">
           <p class="subscribe-text">Subscribe</p>
           <form class="footer-form" name="subscribe-form">
@@ -371,5 +379,85 @@
         </div>
       </div> -->
     </footer>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg class="menu-close-icon" width="8" height="8">
+          <use href="./images/icons.svg#icon-close-menu"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu list">
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link link" href="./index.html">Studio</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link link" href="./portfolio.html">Portfolio</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link link" href="">Contacts</a>
+        </li>
+      </ul>
+      <address class="mob-contacts">
+        <ul class="mob-contacts-list list">
+          <li class="mob-contacts-item">
+            <div class="mob-tel-box">
+              <a class="mob-address-menu-tel link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </div>
+          </li>
+          <li class="mob-contacts-item">
+            <div class="mob-email-box">
+              <a class="mob-address-menu link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </div>
+          </li>
+        </ul>
+      </address>
+      <ul class="social-media list">
+        <li class="social-media-item">
+          <a class="social-media-icon-link" href="https://www.instagram.com/">
+            <svg class="team-social-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-media-item">
+          <a class="social-media-icon-link" href="https://www.twitter.com/">
+            <svg class="team-social-icon" width="24" height="24">
+              <use
+                class="social-media-icon-link"
+                href="./images/icons.svg#icon-twitter"
+              ></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-media-item">
+          <a class="social-media-icon-link" href="https://www.facebook.com/">
+            <svg class="team-social-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-media-item">
+          <a class="social-media-icon-link" href="https://www.linkedin.com/">
+            <svg class="team-social-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- script -->
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
