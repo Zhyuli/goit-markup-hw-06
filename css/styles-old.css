@@ -32,19 +32,19 @@
 
 
 
-.nav {
+/* .nav {
     display: flex;
     align-items: center;
-}
+} */
 
-.nav .nav-menu {
+/* .nav .nav-menu {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     padding: 24px 0;
     position: relative;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 
 .nav-menu {
     color: var(--navyblue);
@@ -403,17 +403,17 @@
     margin: 0 0 16px;
 }
 
-.social-media.list {
+/* .social-media.list {
     display: flex;
     gap: 16px;
-}
+} */
 
-.social-media-item {
+/* .social-media-item {
     width: 40px;
     height: 40px;
-}
+} */
 
-.social-media-icon-link {
+/* .social-media-icon-link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -424,7 +424,7 @@
     border-radius: 50%;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-}
+} */
 
 .social-media-icon-link:hover,
 .social-media-icon-link:focus {
