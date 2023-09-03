@@ -300,7 +300,6 @@ screen and (min-resolution: 2dppx) {
     font-weight: 700;
     line-height: 1.11;
     letter-spacing: 0.02em;
-    margin-top: 8px;
     text-transform: capitalize;
 }
 
