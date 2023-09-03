@@ -1324,6 +1324,14 @@ screen and (min-resolution: 2dppx) {
 
 }
 
+@media only screen and (min-width: 768px) {
+    .footer-form-input {
+        margin: 0;
+        min-width: 264px;
+    }
+}
+
+
 /* @media (max-width: 767px) {
 
     .footer-form-input,
@@ -1354,7 +1362,7 @@ screen and (min-resolution: 2dppx) {
 
 @media only screen and (min-width: 768px) {
     .subscribe-text {
-        text-align: left;
+        text-align: start;
     }
 }
 
