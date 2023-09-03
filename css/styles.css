@@ -295,12 +295,19 @@ screen and (min-resolution: 2dppx) {
 
 .benefits-list-subtitle {
     color: var(--navyblue);
-    text-align: left;
+
     font-size: 36px;
     font-weight: 700;
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
+    text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+    .benefits-list-subtitle {
+        text-align: left;
+    }
 }
 
 @media only screen and (min-width: 1158px) {
@@ -1450,10 +1457,15 @@ screen and (min-resolution: 2dppx) {
     padding: 72px 24px 24px;
 }
 
+@media only screen and (max-width: 427.98px) {
+    .modal {
+        max-width: 320px;
+    }
+}
+
 @media only screen and (min-width: 768px) {
     .modal {
-        max-width: px;
-
+        max-width: 408px;
     }
 }
 
@@ -1504,6 +1516,7 @@ screen and (min-resolution: 2dppx) {
     letter-spacing: 0.02em;
     margin-bottom: 16px;
 }
+
 
 .modal-form-block {
     margin-bottom: 8px;
