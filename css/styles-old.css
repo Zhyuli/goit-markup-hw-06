@@ -638,9 +638,7 @@
     color: var(--ocean);
 }
 
-/* modal window */
-
-.backdrop {
+modal window .backdrop {
     position: fixed;
     top: 0;
     left: 0;
@@ -707,7 +705,7 @@
 
 /* modal input forms */
 
-.modal-caption {
+/* .modal-caption {
     color: var(--navyblue);
     text-align: center;
     font-family: Roboto;
@@ -847,7 +845,7 @@
 
 .privacy-policy-link {
     color: var(--iris);
-}
+} */
 
 /**
   |============================

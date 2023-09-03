@@ -300,7 +300,6 @@ screen and (min-resolution: 2dppx) {
     font-weight: 700;
     line-height: 1.11;
     letter-spacing: 0.02em;
-    margin-bottom: 8px;
     margin-top: 8px;
     text-transform: capitalize;
 }
@@ -844,6 +843,7 @@ screen and (min-resolution: 2dppx) {
     margin-bottom: 40px;
 }
 
+
 .mobile-menu-link {
     display: block;
     color: var(--navyblue);
@@ -854,56 +854,46 @@ screen and (min-resolution: 2dppx) {
     text-transform: capitalize;
 }
 
-.mobile-menu-link:active {
+.mobile-menu-link.current {
     color: var(--ocean);
 }
 
 .mob-address-menu-tel {
-
+    display: block;
+    font-style: normal;
     color: var(--iris);
+    font-family: Roboto, sans-serif;
     font-size: 36px;
     font-weight: 700;
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
+    margin-bottom: 40px;
+}
+
+@media only screen and (max-width: 428px) {
+    .mob-address-menu-tel {
+        font-size: 24px;
+    }
 }
 
 .mob-address-menu {
+    display: block;
     color: var(--slate);
+    font-family: Roboto, sans-serif;
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
-    letter-spacing: 0.02em;
+
+    margin-bottom: 48px;
+
+    font-style: normal;
+
 }
 
-/* .address-menu:hover,
+.address-menu:hover,
 .address-menu:focus {
     color: var(--iris);
-} */
-
-.mob-tel-box {
-    display: flex;
-    /* justify-content: space-between; */
-    margin-bottom: 40px;
-    margin-left: auto;
-
-}
-
-@media only screen and (max-width: 427.98px) {
-    .mob-tel-box {
-        min-width: 280px;
-    }
-}
-
-@media only screen and (max-width: 427.98px) {
-    .mob-address-menu-tel {
-        font-size: 23px;
-    }
-}
-
-.mob-email-box {
-    margin-bottom: 48px;
-    margin-left: auto;
 }
 
 .social-media.list {
@@ -913,8 +903,6 @@ screen and (min-resolution: 2dppx) {
     /* gap: 56px; */
     /* gap: 16px; */
 }
-
-
 
 .social-media-item {
     width: 40px;
@@ -971,13 +959,6 @@ screen and (min-resolution: 2dppx) {
     background-color: var(--ocean);
 }
 
-
-
-/* For mobile && tablet screen */
-
-.mobile-menu-link:active {
-    color: ;
-}
 
 /**
   |============================
@@ -1431,7 +1412,7 @@ screen and (min-resolution: 2dppx) {
 
 @media only screen and (min-width: 768px) {
     .modal {
-        max-width: 408px;
+        max-width: px;
 
     }
 }
