@@ -295,13 +295,13 @@ screen and (min-resolution: 2dppx) {
 
 .benefits-list-subtitle {
     color: var(--navyblue);
-
     font-size: 36px;
     font-weight: 700;
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
     text-align: center;
+    margin-bottom: 8px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -402,8 +402,9 @@ screen and (min-resolution: 2dppx) {
 .team-list {
     display: flex;
     flex-direction: column;
-    gap: 72px;
+    /* gap: 72px; */
     text-align: center;
+    align-items: center;
 }
 
 @media only screen and (min-width: 768px) {
@@ -526,11 +527,18 @@ screen and (min-resolution: 2dppx) {
     padding: 96px 0;
 }
 
-@media only screen and (min-width: 1158px) {
-    .customers-section {
-        padding: 120px 0;
+@media only screen and (min-width: 768px) {
+    .customers-container {
+        max-width: 584px;
     }
 }
+
+@media only screen and (min-width: 1158px) {
+    .customers-container {
+        max-width: 1158px;
+    }
+}
+
 
 .customers-list {
     display: flex;
@@ -538,6 +546,8 @@ screen and (min-resolution: 2dppx) {
     flex-direction: row;
     row-gap: 72px;
     column-gap: 16px;
+    align-items: center;
+    justify-content: center;
 
 }
 
@@ -874,7 +884,10 @@ screen and (min-resolution: 2dppx) {
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
-    margin-bottom: 40px;
+}
+
+.mob-contacts-item:not(:last-child) {
+    margin-bottom: 72px;
 }
 
 @media only screen and (max-width: 428px) {
@@ -890,9 +903,6 @@ screen and (min-resolution: 2dppx) {
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
-
-    margin-bottom: 48px;
-
     font-style: normal;
 
 }
@@ -906,9 +916,7 @@ screen and (min-resolution: 2dppx) {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 72px;
-    /* gap: 56px; */
-    /* gap: 16px; */
+
 }
 
 .social-media-item {
@@ -1166,8 +1174,6 @@ screen and (min-resolution: 2dppx) {
     max-width: 428px;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
-
     justify-content: center;
     align-items: center;
 }
@@ -1176,10 +1182,11 @@ screen and (min-resolution: 2dppx) {
 @media only screen and (min-width: 768px) {
     .container.footer {
         max-width: 584px;
-        flex-direction: row;
-        column-gap: 24px;
-        justify-content: unset;
-        align-items: flex-start;
+        display: block;
+        /* flex-direction: row; */
+        justify-content: start;
+        /* align-items: flex-start; */
+
     }
 }
 
@@ -1188,6 +1195,7 @@ screen and (min-resolution: 2dppx) {
         width: 100%;
         flex-wrap: nowrap;
         gap: 0;
+        align-items: baseline;
         justify-content: center;
 
     }
@@ -1196,12 +1204,27 @@ screen and (min-resolution: 2dppx) {
 .footer-section {
     background-color: var(--navyblue);
     padding: 98px 0;
-    /* min-width: 100%; */
+    min-width: 100%;
 
 }
 
-.footer-section .link {}
+/* footer box new div */
 
+@media only screen and (min-width: 768px) {
+    .footer-box {
+        display: flex;
+        gap: 24px;
+    }
+}
+
+@media only screen and (min-width: 1158px) {
+    .footer-box {
+        max-height: 112px;
+        gap: 0;
+    }
+}
+
+/* ************************ */
 
 .footer-text-block {
     display: flex;
@@ -1215,6 +1238,8 @@ screen and (min-resolution: 2dppx) {
     .footer-text-block {
         align-items: flex-start;
         margin-right: 24px;
+
+
     }
 }
 
@@ -1224,6 +1249,7 @@ screen and (min-resolution: 2dppx) {
         margin-right: 120px;
         margin-bottom: 0;
         gap: 0;
+
     }
 }
 
@@ -1238,7 +1264,6 @@ screen and (min-resolution: 2dppx) {
 }
 
 .footer-logo {
-
     color: var(--iris);
     font-weight: 800;
     line-height: 1.17;
@@ -1248,6 +1273,8 @@ screen and (min-resolution: 2dppx) {
     text-align: center;
 
 }
+
+
 
 @media only screen and (min-width: 768px) {
     .footer-logo {
@@ -1261,6 +1288,7 @@ screen and (min-resolution: 2dppx) {
     flex-direction: column;
     align-items: center;
     gap: 16px;
+    margin-bottom: 72px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -1367,12 +1395,8 @@ screen and (min-resolution: 2dppx) {
 
 .footer-form-lebal {
     display: inline-flex;
-    gap: 24px;
 }
 
-/* .subscribe-block {
-    min-width: 100%;
-} */
 
 
 
