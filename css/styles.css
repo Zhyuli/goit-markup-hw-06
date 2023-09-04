@@ -1196,7 +1196,7 @@ screen and (min-resolution: 2dppx) {
 @media only screen and (min-width: 1158px) {
     .container.footer {
         display: flex;
-        width: 1158px;
+        max-width: 1158px;
         flex-wrap: nowrap;
         gap: 0;
         align-items: baseline;
