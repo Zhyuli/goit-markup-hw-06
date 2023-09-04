@@ -1240,7 +1240,7 @@ screen and (min-resolution: 2dppx) {
 @media only screen and (min-width: 768px) {
     .footer-box {
         display: flex;
-        margin-bottom: 0;
+        /* margin-bottom: 0; */
         gap: 24px;
 
 
@@ -1261,7 +1261,7 @@ screen and (min-resolution: 2dppx) {
     flex-direction: column;
     align-items: center;
     gap: 18px;
-    margin-bottom: 72px;
+    /* margin-bottom: 72px; */
 }
 
 @media only screen and (min-width: 768px) {
@@ -1337,16 +1337,15 @@ screen and (min-resolution: 2dppx) {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
-
     text-align: center;
 }
 
-/* @media only screen and (min-width: 768px) {
-        .social-media-text {
-            text-align: start;
+@media only screen and (min-width: 768px) {
+    .social-media-text {
+        text-align: left;
 
-        }
-    } */
+    }
+}
 
 @media only screen and (min-width: 1158px) {
     .social-media-text {
@@ -1397,7 +1396,7 @@ screen and (min-resolution: 2dppx) {
     border-radius: 4px;
     color: var(--white);
     font-size: 12px;
-    /* margin-bottom: 16px; */
+
 
 }
 
