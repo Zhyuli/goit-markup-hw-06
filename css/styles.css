@@ -1295,7 +1295,7 @@ screen and (min-resolution: 2dppx) {
 
 
 .footer-logo {
-    margin-bottom: 16px;
+    /* margin-bottom: 16px; */
     color: var(--iris);
     font-weight: 800;
     line-height: 1.17;
@@ -1374,6 +1374,7 @@ screen and (min-resolution: 2dppx) {
 .footer-form {
     display: flex;
     flex-direction: column;
+
 }
 
 @media only screen and (min-width: 768px) {
