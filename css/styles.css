@@ -759,12 +759,6 @@ screen and (min-resolution: 2dppx) {
     align-items: center;
 }
 
-@media only screen and (min-width: 1158px) {
-    .header-logo {
-        margin-left: 156px;
-
-    }
-}
 
 
 .logo-dark {
@@ -1009,19 +1003,21 @@ screen and (min-resolution: 2dppx) {
 .hero-portf-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
+    max-width: 288px;
+    row-gap: 24px;
+    column-gap: 24px;
     margin-bottom: 48px;
-    /* margin-bottom: 72px; */
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: left;
-    align-items: center;
+
+    /* align-items: center; */
 }
 
 @media only screen and (min-width: 768px) {
     .hero-portf-list {
         margin-bottom: 64px;
         justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 768px;
     }
 }
 
@@ -1050,8 +1046,16 @@ screen and (min-resolution: 2dppx) {
         box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media only screen and (min-width: 768px) {
+    .hero-portf-btn {
+        padding: 12px 24px;
+    }
+}
+
 @media only screen and (max-width: 768.98px) {
-    .hero-portf-btn:active {
+
+    .hero-portf-btn:hover,
+    .hero-portf-btn:focus {
         background-color: var(--ocean);
         color: var(--white);
         border: 1px solid transparent;
