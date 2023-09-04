@@ -1268,6 +1268,7 @@ screen and (min-resolution: 2dppx) {
     .footer-text-block {
         /* width: 264px; */
         align-items: flex-start;
+        gap: 0;
 
 
     }
