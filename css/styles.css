@@ -1233,6 +1233,10 @@ screen and (min-resolution: 2dppx) {
 
 /* footer box new div */
 
+.footer-box {
+    margin-bottom: 72px;
+}
+
 @media only screen and (min-width: 768px) {
     .footer-box {
         display: flex;
@@ -1306,7 +1310,7 @@ screen and (min-resolution: 2dppx) {
     flex-direction: column;
     align-items: center;
     gap: 16px;
-    margin-bottom: 72px;
+
 }
 
 @media only screen and (min-width: 768px) {
