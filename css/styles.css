@@ -1081,21 +1081,22 @@ screen and (min-resolution: 2dppx) {
   | projects
   |============================
 **************/
-.projects-list {
+.projects-link {
     display: block;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media only screen and (min-width: 768px) {
-    .projects-list {
-        display: flex;
-        flex-wrap: wrap;
-        column-gap: 24px;
-        row-gap: 72px;
-    }
+
+.projects-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
 }
+
 
 .projects-list-item:not(:last-child) {
-    margin-bottom: 48px;
+
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -1116,7 +1117,7 @@ screen and (min-resolution: 2dppx) {
     padding: 32px 16px;
     border: 1px solid var(--cornflower);
     border-top: none;
-    background: var(--white);
+
 
 }
 
@@ -1252,17 +1253,13 @@ screen and (min-resolution: 2dppx) {
     .footer-text-block {
         width: 264px;
         align-items: flex-start;
-
         margin-right: 24px;
-
-
 
     }
 }
 
 @media only screen and (min-width: 1158px) {
     .footer-text-block {
-
         margin-right: 120px;
         margin-bottom: 0;
         gap: 0;
@@ -1291,22 +1288,17 @@ screen and (min-resolution: 2dppx) {
 
 }
 
-
-
-
-
-
 .social-media-block {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 16px;
-    /* margin-bottom: 72px; */
+    margin-bottom: 72px;
 }
 
 @media only screen and (min-width: 768px) {
     .social-media-block {
-        align-items: stretch;
+        align-items: ;
 
     }
 }
