@@ -1251,6 +1251,8 @@ screen and (min-resolution: 2dppx) {
     .footer-box {
         max-height: 112px;
         gap: 0;
+        margin-bottom: 0;
+        margin-right: 80px;
     }
 }
 
@@ -1269,8 +1271,6 @@ screen and (min-resolution: 2dppx) {
         /* width: 264px; */
         margin-bottom: 0;
         align-items: flex-start;
-
-
 
     }
 }
@@ -1327,7 +1327,7 @@ screen and (min-resolution: 2dppx) {
 @media only screen and (min-width: 1158px) {
     .social-media-block {
         display: block;
-        margin-right: 80px;
+        /* margin-right: 80px; */
         margin-bottom: 0;
     }
 }
