@@ -1297,16 +1297,14 @@ screen and (min-resolution: 2dppx) {
 }
 
 @media only screen and (min-width: 768px) {
-    .social-media-block {
-        align-items: ;
-
-    }
+    .social-media-block {}
 }
 
 @media only screen and (min-width: 1158px) {
     .social-media-block {
         display: block;
         margin-right: 80px;
+        margin-bottom: 0;
     }
 }
 
